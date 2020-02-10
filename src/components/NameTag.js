@@ -5,17 +5,17 @@ import Shape from './Shape';
 import styles from './NameTag.css';
 
 export default function NameTag() {
-  const [text, setText] = useState('');
-  const [color, setColor] = useState('');
-  const [backgroundColor, setBackgroundColor] = useState('');
+  const [text, setText] = useState('Your Name');
+  const [color, setColor] = useState('#FFFFFF');
+  const [backgroundColor, setBackgroundColor] = useState('#000000');
 
-  const nameTagOperator = {
+  const nameTagMethod = {
     text: setText,
     color: setColor,
     backgroundColor: setBackgroundColor
   };
   const handleChange = ({ target }) => {
-    nameTagOperator[target.name](target.value);
+    nameTagMethod[target.name](target.value);
   };
 
   return (

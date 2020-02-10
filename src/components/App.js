@@ -1,5 +1,5 @@
 import React from 'react';
-import NameTag from './NameTag';
+import  NameTag  from './NameTag';
 export default function App() {
   return (
     <>
